@@ -1,0 +1,527 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enfermería a Domicilio - Lic. Quetzal Arais Piña Lopez</title>
+
+  <meta name="description" content="Servicio de enfermería a domicilio: valoración, control de signos vitales, seguimiento, educación para la salud, aplicación de medicamentos, vacunas (según indicación) y cuidados paliativos. L-V después de las 3pm (según agenda)." />
+  <meta name="theme-color" content="#1e88e5" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Topbar -->
+  <header class="topbar" role="banner">
+    <div class="container">
+      <div class="topbar-inner">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <!-- LOGO -->
+          <img class="brand-logo" src="assets/img/logo.png" alt="Logo del servicio" />
+          <span class="brand-text">
+            <strong>Enfermería a Domicilio - Lic. Quetzal Arais Piña Lopez</strong>
+            <span>Toluca / Estado de México</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="#servicios">Servicios</a>
+          <a href="#proceso">Cómo funciona</a>
+          <a href="#faq">Preguntas frecuentes</a>
+          <a href="#galeria">Galería</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="top-actions">
+          <!-- WhatsApp real -->
+          <a class="btn btn-primary"
+             href="https://wa.me/527222810507?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20un%20servicio%20de%20enfermer%C3%ADa%20a%20domicilio"
+             target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M20.5 11.8a8.5 8.5 0 0 1-12.5 7.5L4 20l.8-3.8a8.5 8.5 0 1 1 15.7-4.4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.7 9.4c.2-.5.4-.5.7-.5h.6c.2 0 .4.1.5.4l.7 1.6c.1.3.1.5-.1.7l-.5.6c-.2.2-.1.5.1.8.6.8 1.4 1.5 2.3 2 .3.2.6.3.8.1l.7-.5c.2-.1.4-.1.7 0l1.6.7c.3.1.4.3.4.5v.6c0 .3 0 .5-.5.7-.6.3-1.4.4-2.1.2-2.2-.6-4.7-3-5.5-5.3-.2-.7-.1-1.5.2-2.1Z" fill="currentColor" opacity=".9"/>
+            </svg>
+            Agendar
+          </a>
+
+          <!-- Llamada real -->
+          <a class="btn btn-ghost" href="tel:+527222810507" aria-label="Llamar al 7222810507">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M22 16.5v3a2 2 0 0 1-2.2 2c-8.3-.8-14.5-7-15.3-15.3A2 2 0 0 1 6.5 4h3a2 2 0 0 1 2 1.7l.6 3a2 2 0 0 1-.6 1.8l-1.3 1.3a14 14 0 0 0 6.2 6.2l1.3-1.3a2 2 0 0 1 1.8-.6l3 .6a2 2 0 0 1 1.7 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Llamar
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- Hero -->
+    <section class="hero" aria-label="Presentación">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-left">
+            <div class="badge">👩‍⚕️ Servicio de enfermería a domicilio</div>
+
+            <!-- Ajuste: ya no consulta externa -->
+            <h1>Enfermería a domicilio con atención profesional y humana</h1>
+
+            <p class="lead">
+              Atención de enfermería en casa para seguimiento, control, orientación y cuidados. Enfoque centrado en prevención,
+              educación para la salud y acompañamiento responsable, siempre respetando las indicaciones médicas
+              (sin realizar diagnósticos ni sustituir al médico).
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary"
+                 href="https://wa.me/527222810507?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20un%20servicio%20de%20enfermer%C3%ADa%20a%20domicilio"
+                 target="_blank" rel="noopener">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M20.5 11.8a8.5 8.5 0 0 1-12.5 7.5L4 20l.8-3.8a8.5 8.5 0 1 1 15.7-4.4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8.7 9.4c.2-.5.4-.5.7-.5h.6c.2 0 .4.1.5.4l.7 1.6c.1.3.1.5-.1.7l-.5.6c-.2.2-.1.5.1.8.6.8 1.4 1.5 2.3 2 .3.2.6.3.8.1l.7-.5c.2-.1.4-.1.7 0l1.6.7c.3.1.4.3.4.5v.6c0 .3 0 .5-.5.7-.6.3-1.4.4-2.1.2-2.2-.6-4.7-3-5.5-5.3-.2-.7-.1-1.5.2-2.1Z" fill="currentColor" opacity=".9"/>
+                </svg>
+                Agendar por WhatsApp
+              </a>
+
+              <!-- Cambié el botón secundario a correo (ya no maps/consultorio) -->
+              <a class="btn btn-ghost" href="mailto:quetzalpina02@gmail.com" aria-label="Enviar correo">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="2" />
+                  <path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2" />
+                </svg>
+                Enviar correo
+              </a>
+            </div>
+
+            <div class="meta" role="list" aria-label="Detalles de modalidad y horario">
+              <div class="pill" role="listitem">
+                <div class="dot" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M12 8v4l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="2" opacity=".7"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Modalidad</strong>
+                  <span>Servicio a domicilio (con cita previa)</span>
+                </div>
+              </div>
+
+              <div class="pill" role="listitem">
+                <div class="dot" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M8 7V5m8 2V5M7 11h10M6 9h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Horarios</strong>
+                  <span>Lunes – Sabados (según agenda)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Presentation card -->
+          <aside class="card profile-card" aria-label="Tarjeta de presentación">
+            <div class="profile-top">
+              <!-- Foto de perfil real -->
+              <img class="profile-photo" src="assets/img/perfil.jpeg" alt="Foto de la enfermera" />
+              <div class="profile-name">
+                <strong>Lic. Quetzal Arais Piña Lopez</strong>
+                <span>Licenciada en Enfermería · Servicio a domicilio</span>
+              </div>
+            </div>
+
+            <p class="profile-desc">
+              Experiencia en entorno hospitalario y atención domiciliaria, con enfoque en seguimiento del paciente,
+              prevención y educación para la salud. Trato humano, comunicación clara y cuidado responsable.
+            </p>
+
+            <div class="availability" aria-label="Disponibilidad">
+              <span class="pulse" aria-hidden="true"></span>
+              Atención con cita previa
+            </div>
+
+            <div class="profile-meta" aria-label="Detalles del servicio">
+              <div class="mini">
+                <strong>Zona</strong>
+                <span>Toluca / Estado de México</span>
+              </div>
+              <div class="mini">
+                <strong>Contacto</strong>
+                <span>WhatsApp: 7222810507 · Correo: quetzalpina02@gmail.com</span>
+                
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="servicios" aria-label="Servicios de enfermería a domicilio">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Servicios de enfermería a domicilio</h2>
+        <p>Servicios enfocados a cuidados, control, seguimiento y orientación.</p>
+      </div>
+    </div>
+
+    <div class="services-grid services-grid--with-images">
+
+      <!-- 1) Valoración y control clínico -->
+      <article class="service-card service-card--media">
+        <img class="service-img" src="assets/img/C-1.png" alt="Valoración y control clínico">
+
+        <div class="service-body">
+          <div class="service-top">
+            <div class="service-ico" aria-hidden="true">🩺</div>
+            <h3>Valoración y control clínico</h3>
+          </div>
+
+          <p class="service-summary">
+            Evaluación de enfermería y mediciones para control y seguimiento en casa.
+          </p>
+
+          <details class="service-details">
+            <summary>
+              Ver detalles
+              <span class="chev" aria-hidden="true">▾</span>
+            </summary>
+
+            <div class="service-details__content">
+              <ul class="list">
+                <li>Valoración de enfermería</li>
+                <li>Toma de signos vitales (presión, FC, FR, temperatura, saturación)</li>
+                <li>Control de peso y talla (si aplica)</li>
+                <li>Control de glucosa capilar (con equipo del paciente o propio si aplica)</li>
+                <li>Seguimiento de parámetros indicados por el médico</li>
+              </ul>
+              <div class="note">Nota: Se registra información para seguimiento y se orienta al paciente/familia.</div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- 2) Seguimiento de enfermedades crónicas -->
+      <article class="service-card service-card--media">
+        <img class="service-img" src="assets/img/C-2.png" alt="Seguimiento de enfermedades crónicas">
+
+        <div class="service-body">
+          <div class="service-top">
+            <div class="service-ico" aria-hidden="true">📈</div>
+            <h3>Seguimiento de enfermedades crónicas</h3>
+          </div>
+
+          <p class="service-summary">
+            Acompañamiento a pacientes con hipertensión, diabetes, etc., con registro y control en casa.
+          </p>
+
+          <details class="service-details">
+            <summary>
+              Ver detalles
+              <span class="chev" aria-hidden="true">▾</span>
+            </summary>
+
+            <div class="service-details__content">
+              <ul class="list">
+                <li>Acompañamiento a pacientes con hipertensión, diabetes, etc.</li>
+                <li>Registro y control de signos vitales</li>
+                <li>Orientación sobre cuidados básicos indicados por el profesional de la salud</li>
+                <li>Refuerzo de indicaciones médicas (no diagnósticos)</li>
+              </ul>
+              <div class="note">Se recomienda seguimiento médico regular según el caso.</div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- 3) Aplicación y cuidados indicados -->
+      <article class="service-card service-card--media">
+        <img class="service-img" src="assets/img/C-4.png" alt="Aplicación y cuidados indicados">
+
+        <div class="service-body">
+          <div class="service-top">
+            <div class="service-ico" aria-hidden="true">💉</div>
+            <h3>Aplicación y cuidados indicados</h3>
+          </div>
+
+          <p class="service-summary">
+            Apoyo posterior a consulta médica y cuidados en casa respetando indicaciones.
+          </p>
+
+          <details class="service-details">
+            <summary>
+              Ver detalles
+              <span class="chev" aria-hidden="true">▾</span>
+            </summary>
+
+            <div class="service-details__content">
+              <ul class="list">
+                <li>Aplicación de medicamentos con indicación/receta (cuando aplique)</li>
+                <li>Vacunas (según disponibilidad y normativa aplicable)</li>
+                <li>Explicación y refuerzo de indicaciones del médico</li>
+                <li>Orientación sobre signos de alarma que requieren acudir a urgencias</li>
+                <li>Revisión de adherencia al tratamiento (sin modificarlo)</li>
+              </ul>
+              <div class="note">No se realizan cambios de medicación ni se sustituyen indicaciones del médico.</div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- 4) Educación para la salud y cuidados paliativos -->
+      <article class="service-card service-card--media">
+        <img class="service-img" src="assets/img/C-3.png" alt="Educación para la salud y cuidados paliativos">
+
+        <div class="service-body">
+          <div class="service-top">
+            <div class="service-ico" aria-hidden="true">🤍</div>
+            <h3>Educación para la salud y cuidados paliativos</h3>
+          </div>
+
+          <p class="service-summary">
+            Orientación práctica para autocuidado, prevención y apoyo al paciente/familia.
+          </p>
+
+          <details class="service-details">
+            <summary>
+              Ver detalles
+              <span class="chev" aria-hidden="true">▾</span>
+            </summary>
+
+            <div class="service-details__content">
+              <ul class="list">
+                <li>Pláticas individuales sobre autocuidado</li>
+                <li>Hábitos saludables (alimentación, higiene, descanso)</li>
+                <li>Prevención de riesgos en casa</li>
+                <li>Educación a familia / cuidadores</li>
+                <li>Apoyo y acompañamiento en cuidados paliativos (según plan y coordinación)</li>
+              </ul>
+              <div class="note">Enfoque preventivo, educativo y de apoyo, con lenguaje claro y objetivo.</div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Process -->
+    <section id="proceso" aria-label="Cómo funciona la consulta">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>¿Cómo funciona el servicio?</h2>
+            <p>Proceso sencillo para brindarte atención organizada, responsable y enfocada en cuidados a domicilio.</p>
+          </div>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="num" aria-hidden="true">1</div>
+            <div>
+              <h3>Agenda tu cita</h3>
+              <p>Vía WhatsApp o llamada. Comparte tu nombre, zona y motivo del servicio para confirmar disponibilidad.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="num" aria-hidden="true">2</div>
+            <div>
+              <h3>Confirmación</h3>
+              <p>Se confirma horario (L - S según agenda) y lo necesario (receta/indicaciones si aplican).</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="num" aria-hidden="true">3</div>
+            <div>
+              <h3>Atención en domicilio</h3>
+              <p>Se realiza la valoración/servicio de enfermería y se registran datos para seguimiento responsable.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="num" aria-hidden="true">4</div>
+            <div>
+              <h3>Recomendaciones y seguimiento</h3>
+              <p>Te llevas recomendaciones de cuidado y señales de alarma (cuando acudir a urgencias/valoración médica).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" aria-label="Preguntas frecuentes">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Preguntas frecuentes</h2>
+            <p>Respuestas claras, responsables y alineadas a buenas prácticas.</p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>
+              ¿El servicio de enfermería sustituye al médico?
+              <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="faq-content">
+              <p>No. Es un apoyo para valoración, control, cuidados y educación para la salud. No se realizan diagnósticos médicos ni se sustituye una consulta con médico.</p>
+              <p class="small">Si presentas síntomas importantes o empeoramiento, se recomienda acudir a atención médica o urgencias.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              ¿Qué debo tener listo para el servicio a domicilio?
+              <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="faq-content">
+              <p>Identificación, lista de medicamentos actuales (o fotos), indicaciones médicas recientes (si las tienes) y registros previos de presión/glucosa si aplican. Un espacio limpio y bien iluminado ayuda.</p>
+              <p class="small">Para aplicaciones/vacunas, puede requerirse receta/indicación según el caso.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              ¿Atiende a niños y adultos mayores?
+              <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="faq-content">
+              <p>Sí. La atención se adapta según edad, condición y motivo del servicio. Si se detecta que se requiere valoración médica, se orienta para acudir con el especialista.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              ¿Puedo solicitar apoyo después de salir del hospital?
+              <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="faq-content">
+              <p>Sí, especialmente para seguimiento y control, refuerzo de indicaciones y cuidados. Es importante contar con indicaciones de egreso y consultar al médico si aparecen signos de alarma.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              ¿Cómo se manejan los datos del paciente?
+              <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="faq-content">
+              <p>La información se utiliza únicamente para la atención y seguimiento. Se recomienda contar con aviso de privacidad y consentimiento informado según corresponda.</p>
+              <p class="small">Puedes enlazar tu Aviso de privacidad en el footer.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería (sección nueva sin recortar nada de lo anterior) -->
+    <section id="galeria" aria-label="Galería promocional">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Galería</h2>
+            <p>Imágenes del personal de salud que presta el servicio.</p>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-card">
+            <img src="assets/img/promo-1.jpeg" alt="Enfermería a domicilio - imagen promocional 1">
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/img/promo-2.jpeg" alt="Enfermería a domicilio - imagen promocional 2">
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/img/promo-3.jpeg" alt="Enfermería a domicilio - imagen promocional 3">
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/img/promo-4.jpeg" alt="Enfermería a domicilio - imagen promocional 4">
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/img/promo-5.jpeg" alt="Enfermería a domicilio - imagen promocional 5">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section id="contacto" class="cta" aria-label="Contacto y llamado a la acción">
+      <div class="container">
+        <div class="cta-box">
+          <div class="cta-inner">
+            <div>
+              <h2>¿Necesitas un servicio de enfermería a domicilio?</h2>
+              <p>
+                Envía un mensaje por WhatsApp con tu nombre, zona y el motivo del servicio,
+                y se te confirmará la disponibilidad y el horario (Lunes – Sabado según agenda).
+              </p>
+              <p class="cta-hint">
+                Sugerencia de mensaje: “Hola, soy [Tu nombre]. Estoy en [Zona]. Necesito servicio por [motivo].”
+              </p>
+            </div>
+
+            <div class="cta-actions" aria-label="Acciones de contacto">
+              <a class="btn btn-light"
+                 href="https://wa.me/527222810507?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20un%20servicio%20de%20enfermer%C3%ADa%20a%20domicilio"
+                 target="_blank" rel="noopener">
+                WhatsApp
+              </a>
+
+              <a class="btn btn-outline" href="tel:+527222810507">Llamar</a>
+
+              <a class="btn btn-outline" href="mailto:quetzalpina02@gmail.com">Correo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="foot-title">Enfermería a Domicilio - Lic. Quetzal Arais Piña Lopez</div>
+          <p class="foot-small">
+            <strong>Sitio informativo.</strong> El servicio de enfermería no sustituye la atención médica especializada.
+          </p>
+          <p class="foot-small" style="margin-top:8px;">
+            © <span id="year">2025</span> · Toluca / Estado de México
+          </p>
+        </div>
+
+        <div class="foot-links" aria-label="Enlaces del pie de página">
+          <a href="https://wa.me/527222810507?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20un%20servicio%20de%20enfermer%C3%ADa%20a%20domicilio" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="tel:+527222810507">Llamar</a>
+          <a href="mailto:quetzalpina02@gmail.com">Correo</a>
+          <a href="#" aria-label="Aviso de privacidad (pendiente)">Aviso de privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
